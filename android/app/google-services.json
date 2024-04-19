@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1086387828729",
+    "project_id": "diety-36af6",
+    "storage_bucket": "diety-36af6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086387828729:android:7afa4d91d785a4332c2f28",
+        "android_client_info": {
+          "package_name": "com.example.diety_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJDyS_St5PHiUU5EJCII8d7jZjW3iKz9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
