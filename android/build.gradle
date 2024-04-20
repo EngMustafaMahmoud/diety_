@@ -1,3 +1,19 @@
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Other dependencies...
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.4'
+        classpath 'com.google.firebase:perf-plugin:1.4.2'
+
+        
+    }
+}
 allprojects {
     repositories {
         google()
@@ -16,10 +32,8 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
-plugins {
-  // ...
 
-  // Add the dependency for the Google services Gradle plugin
-  id 'com.google.gms.google-services' version '4.4.1' 
-
-}
+// Ensure there's only one `plugins {}` block, placed at the end
+// plugins {
+//     id 'com.google.gms.google-services' version '4.4.1' 
+// }
